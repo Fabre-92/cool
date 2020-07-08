@@ -1,0 +1,2 @@
+class Webproject < ApplicationRecord
+end
