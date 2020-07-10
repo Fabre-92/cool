@@ -1,0 +1,17 @@
+<h1 class="title">webprojects show </h1>
+  <div class="container">
+    <div class="level-right">
+      <p class="level-item">
+        <%= link_to "Edit", edit_webproject_path(@webproject), class: "button" %>
+      </p>
+      <p class="level-item">
+        <!-- add delete function -->
+        <%= link_to "Delete", webproject_path(@webproject), method: :delete, data: { confirm: "Are you sure? " }, class: "button is-danger" %>
+      </p>
+    </div>
+
+    <h2> <%= @webproject.name %></h2>
+    <div class="content">
+      <%= @webproject.description %>
+    </div>
+  </div>
